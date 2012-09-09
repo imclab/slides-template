@@ -103,24 +103,24 @@
 	<article data-markdown>
 		### Example of iframe
 
-		<iframe height='400px' src='http://jeromeetienne.github.com/demo.ridinglight/'
+		<iframe height='400px' src='http://jeromeetienne.github.com/demo.ridinglight/index.html'
 			allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 	</article>
-	<article data-markdown>
+<!-- 	<article data-markdown>
 		### Include code
 		
 		* with prettify.js
 
 		```
-		  < !doctype html><title>Minimal tQuery Page</title>
-		  <script src="../../build/tquery-bundle.js"></script>
-		  <body><script>
-		      var world	= tQuery.createWorld().boilerplate().start();
-		      var object	= tQuery.createTorus().addTo(world);
-		  </script></body>
+			< !doctype html><title>Minimal tQuery Page</title>
+			<script src="../../build/tquery-bundle.js"></script>
+			<body><script>
+			var world	= tQuery.createWorld().boilerplate().start();
+			var object	= tQuery.createTorus().addTo(world);
+			</script></body>
 		```
 	</article>
-	<article data-markdown>
+ -->	<article data-markdown>
 		
 		# *Questions ?*
 				
@@ -138,7 +138,6 @@
 	// If you're not using this as a userscript just delete from this line up. It's cool, homey.
 	
 	(function markdownSlideToHtml(){
-	  
 		if (!window.Showdown){
 			var scr		= document.createElement('script');
 			scr.onload	= markdownSlideToHtml;
@@ -146,7 +145,6 @@
 			document.body.appendChild(scr);
 			return;
 		}
-	
 		[].forEach.call(document.querySelectorAll('[data-markdown]'), function fn(elem){
 			// strip leading whitespace so it isn't evaluated as code
 			//var text      = elem.textContent.replace(/\n\s*\n/g,'\n');
